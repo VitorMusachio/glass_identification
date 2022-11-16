@@ -17,3 +17,25 @@ Para este experimento, será utilizado o dataset Glass Identification originado 
 | Ba |  Bário (unidade de medida: porcentagem em peso do óxido correspondente) |
 | Fe |  Ferro (unidade de medida: porcentagem em peso do óxido correspondente) |
 | Type of glass | classe: 1-building_windows_float_processed; 2-building_windows_non_float_processed; 3-vehicle_windows_float_processed; 4-vehicle_windows_non_float_processed (nenhum neste dataset); 5-containers; 6-tableware; 7-headlamps |
+
+Fontes de dados: para este experimento será utilizado o dataset Glass Identification originado do Serviço de Ciência Forense dos Estados Unidos. O dataset está disponível no UCI Machine Learning Repository. Para mais detalhes, consulte: https://archive.ics.uci.edu/ml/datasets/glass+identification.
+
+Coleta dos dados: dados coletados diretamente do UCI Machine Learning Repository.
+
+Dinâmica de criação/atualização do modelo: o modelo não será atualizado com novos dados.
+
+Dinâmica de execução do modelo: o modelo será executado uma única vez.
+
+Avaliação offline do modelo: utilização de base de testes para validar o modelo em dados não vistos durante o treinamento (hold-out).
+
+Monitoramento online do modelo: não aplicável.
+
+Qualidade dos dados: espera-se que os dados estejam balanceados entre as diferentes classes de vidro. Hold-out: 80% treino e 20% teste. Validação cruzada estratificada: 10-fold.
+
+Fairness: não aplicável.
+
+Explicabilidade: deseja-se um balanceamento entre acurácia e explicabilidade.
+
+Confiabilidade: acurácia > 70%.
+
+Desempenho: tempo de inferência < 5 minutos.
